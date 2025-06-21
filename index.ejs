@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crop Health Checker</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <h1>Crop Health Checker</h1>
+  <form action="/check" method="POST">
+    <input type="text" name="city" placeholder="Enter city" required>
+    <select name="crop" required>
+      <option value="">Select Crop</option>
+      <option value="wheat">Wheat</option>
+      <option value="corn">Corn</option>
+      <option value="rice">Rice</option>
+      <option value="cotton">Cotton</option>
+    </select>
+    <button type="submit">Check Health</button>
+  </form>
+
+  <% if (result) { %>
+   <div class="result">
+  <div>Weather Details for <%= result.city %>:</div>
+  <p>Crop: <%= result.crop %></p>
+  <p>Temperature: <%= result.current_temp %>°C (<%= result.temp_status %>)</p>
+  <p>Humidity: <%= result.current_humidity %>% (<%= result.humidity_status %>)</p>
+  <p>Pressure: <%= result.current_pressure %> hPa (<%= result.pressure_status %>)</p>
+
+  <div>Overall Crop Health Result:</div>
+  <div class="health-status <%= result.overall_health === 'Healthy' ? 'healthy' : 'unhealthy' %>">
+    <%= result.overall_health %>
+  </div>
+</div>
+  <% } %>
+
+  <% if (error) { %>
+    <p class="error"><%= error %></p>
+  <% } %>
+
+</body>
+</html>

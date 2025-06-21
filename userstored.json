@@ -1,0 +1,47 @@
+[
+  {
+    "city": "Murree",
+    "crop": "wheat",
+    "result": {
+      "city": "Murree",
+      "crop": "wheat",
+      "current_humidity": 34,
+      "current_pressure": 999,
+      "current_temp": 30.36,
+      "humidity_status": "Not Optimal",
+      "overall_health": "Unhealthy",
+      "pressure_status": "Not Optimal",
+      "temp_status": "Not Optimal"
+    }
+  },
+  {
+    "city": "Istanbul",
+    "crop": "corn",
+    "result": {
+      "city": "Istanbul",
+      "crop": "corn",
+      "current_humidity": 39,
+      "current_pressure": 1018,
+      "current_temp": 24.6,
+      "humidity_status": "Not Optimal",
+      "overall_health": "Unhealthy",
+      "pressure_status": "Optimal",
+      "temp_status": "Optimal"
+    }
+  },
+  {
+    "city": "Istanbul",
+    "crop": "corn",
+    "result": {
+      "city": "Istanbul",
+      "crop": "corn",
+      "current_humidity": 43,
+      "current_pressure": 1018,
+      "current_temp": 25.04,
+      "humidity_status": "Not Optimal",
+      "overall_health": "Unhealthy",
+      "pressure_status": "Optimal",
+      "temp_status": "Optimal"
+    }
+  }
+]
