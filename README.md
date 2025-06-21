@@ -54,6 +54,7 @@ To clone this project, run the following in your **Visual Studio terminal**:
 - Now split the terminal and in that terminal navigate to folder **browser** and after navigating install required dependencies like **npm init -y** and
   **npm install express node-fetch** for **app.js.** 
 - Now after doing al the above mentioned steps, in first terminal which has **API** route run **python server.py.**
-- In second termina which has **browser** route run **nodemon app.js.**
-- You will see something like this below, then click on **🌐 Frontend running at http://localhost:3000** by **Ctrl + click.**
+- In second terminal which has **browser** route run **nodemon app.js.**
+- You will see something like this below, then click on **🌐 Frontend running at http://localhost:3000** by **Ctrl + click.** Also if want to check only backend
+  server, run it on **postman** as the screenshot is already placed in the **testing section.** Make sure to run only **python server.py.** before testing.
 > ![Code](Code.png)
