@@ -12,6 +12,7 @@ Fetches real-time weather data based on user-input city names and compares it to
 - **CSS** | (UI styling). File name **style.css.**
 - **OpenWeatherMap API** | (Real-time weather data.)
 - **JSON File System** | (Local data storage.). File name **userstored.json.**
+- Used **Visual Studio Code** software to implement the above files.
 
 ---
 
@@ -41,6 +42,18 @@ Users can:
 > ![Frontend](frontendtesting.png)
 > ![Backend](backendtesting.png)
 
+---
 
+## 🚀 How to Run the Project
 
-
+To clone this project, run the following in your **Visual Studio terminal**:
+- git clone https://github.com/Syed-Ammar-21/Crop_Health_Checker.git
+- cd Crop_Health_Checker
+- Now you have navigated to your project folder using **cd**, mine was named **API** in folder structure. Install required dependencies in **Visual Studio
+  terminal** like **pip install flask flask-cors requests** for python **server.py.**
+- Now split the terminal and in that terminal navigate to folder **browser** and after navigating install required dependencies like **npm init -y** and
+  **npm install express node-fetch** for **app.js.** 
+- Now after doing al the above mentioned steps, in first terminal which has **API** route run **python server.py.**
+- In second termina which has **browser** route run **nodemon app.js.**
+- You will see something like this below, then click on **🌐 Frontend running at http://localhost:3000** by **Ctrl + click.**
+> ![Code](Code.png)
